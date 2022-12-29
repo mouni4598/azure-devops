@@ -16,8 +16,24 @@ jobs:
 
 - job: job2
   steps:
+  dependsOn: job1
   - script: |
      echo Add other tasks to build, test, and deploy your project.
      echo adding new line for testing
      echo See https://aka.ms/yaml
     displayName: 'Run a multi-line script'
+- job: job3
+  steps:
+  dependsOn: job2
+  - script: |
+     echo Adding job 3.
+    displayName: 'Run a one-line script'
+- job: job4
+  steps:
+  dependsOn:
+   - job2
+   - job3
+  - script: |
+     echo this is job 4.
+    displayName: 'Run a one-line script'
+

@@ -1,0 +1,23 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+stages:
+- stage: BUILD&DEPLOY
+  jobs:
+  - job: BuildJob
+    steps:
+      - bash: echo "do the build"
+  - job: package
+    steps:
+      - script: echo "package the app"
+  - job: deploy
+    steps:
+      - script: echo deploy the artifact

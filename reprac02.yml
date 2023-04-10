@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 stages:
-- stage: BUILD&DEPLOY
+- stage: BUILD_DEPLOY
   jobs:
   - job: BuildJob
     steps:

@@ -63,18 +63,3 @@ stages:
 #   - job: ProdDeployJob
 #     steps:
 #     - bash: echo ProdDeployJob
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-devops-master-class/02-understanding-stages.yml at master · in28minutes/devops-master-class
